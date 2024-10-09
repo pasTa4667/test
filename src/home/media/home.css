@@ -1,0 +1,46 @@
+.home-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+    width: 30rem;
+    height: 5rem;
+    background-color: rgb(129, 129, 129);
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgba(126, 51, 101, 0.76);
+}
+
+.main-select, .main-date-select {
+    height: 4rem;
+    box-shadow: 0px 0.1px 2px rgba(0, 0, 0, 0.315);
+    font-size: medium;
+}
+
+.main-date-select {
+    height: 3.8rem;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.main-date-select:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+.submit-button {
+    width: 5rem;
+    height: 2rem;
+    box-shadow: 0px 1px 10px rgba(126, 51, 101, 0.76);
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+}

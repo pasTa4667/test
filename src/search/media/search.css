@@ -1,0 +1,135 @@
+.search-contain {
+    display: flex;
+}
+
+/* MEDIA STYLE */
+
+@media (min-width: 768px) {
+
+    /* SEARCH PAGE */
+    
+        .search-container {
+            display: grid;
+            grid-template-columns: [first] 10rem [second] auto;
+            grid-template-rows: [row1-start] 3rem [row2-start] auto [row3-start] auto;
+            --primary-color: rgb(138, 138, 138);
+        }
+    
+        .header {
+            grid-column: span 2;
+            background-color: var(--primary-color);
+        }
+    
+        .side-bar {
+            grid-row: span 2;
+            background-color: var(--primary-color);
+            border-right: 1px inset rgb(0, 0, 0);
+            border-top: 1px inset rgb(0, 0, 0);
+        }
+    
+        .options-panel {
+            display: flex;
+            border-top: 1px inset rgb(0, 0, 0);
+            background-color: var(--secondary-color);
+            border-bottom: 1px inset rgb(0, 0, 0);
+        }
+    
+        /* DATE SELECTION */
+    
+        .date-time-section {
+            display: flex;
+            margin: 10px;
+            gap: 3px;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .search-date-select {
+            border-radius: 3px;
+            border-width: 0px;
+            margin-bottom: 1px;
+            background-color: rgb(233, 233, 233);
+        }
+    
+        .search-date-select:hover {
+            background-color: rgb(212, 212, 212);
+        }
+    
+        /* PRICE SLIDER */
+    
+        .slider-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+        }
+    
+        .range-slider-label {
+            margin-left: 5px;
+            color: white;
+        }
+    
+        .range-slider {
+            width: 100%;
+            cursor: pointer;
+        }
+    
+    
+        /* CHECKBOX */
+    
+        .checkbox-container {
+            margin-left: 5px
+        }
+    
+        .checkbox-label {
+            margin-left: 5px;
+            color: white;
+        }
+    
+        .checkbox {
+            box-shadow: 0px 0px 1px black;
+            border: none;
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+        }
+    
+        /* PRODUCT DISPLAY */
+    
+        .result-container {
+            background-color: var(--secondary-color);
+        }
+    
+        .result-item:hover {
+            background-color: rgb(182, 182, 182);
+        }
+    
+        .result-item {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            padding-left: 10px;
+        }
+    
+        .result-content {
+            display: grid;
+            width: 100%;
+            grid-template-columns: [first] 50% [second] 50%;
+            grid-template-rows: [first] 2em [second] auto;
+        }
+    
+        .result-header {
+            font-weight: bold;
+            grid-column: span 2;
+        }
+    
+        /* FORM MODAL */
+    
+        .modal-form {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            gap: 10px;
+        }
+}
